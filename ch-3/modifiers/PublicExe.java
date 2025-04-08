@@ -6,9 +6,9 @@ public class PublicExe {
     }
 }
 class MyClass {
-    public int publicVar;  // Accessible from any class
+    protected int publicVar;  // Accessible from any class
 
-    public void showPublic() {
+    protected void showPublic() {
         System.out.println("This is a public method.");
     }
 }

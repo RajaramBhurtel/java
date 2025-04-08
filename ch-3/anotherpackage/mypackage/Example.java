@@ -3,7 +3,27 @@ package mypackage;
 
 // Public class accessible from anywhere
 public class Example {
-    // Public variable accessible from anywhere
+  
+    // Main method to demonstrate access levels
+    public static void main(String[] args) {
+        BCA obj = new BCA();
+
+        // Accessing variables
+        System.out.println(obj.publicVar);     // OK
+        System.out.println(obj.protectedVar);  // OK
+        System.out.println(obj.defaultVar);    // OK
+        System.out.println(obj.privateVar);    // Compilation error (privateVar has private access in Example)
+
+        // Accessing methods
+        obj.publicMethod();     // OK
+        obj.protectedMethod();  // OK
+        obj.defaultMethod();    // OK
+        obj.privateMethod();    // Compilation error (privateMethod() has private access in Example)
+    }
+}
+
+class BCA{
+      // Public variable accessible from anywhere
     public int publicVar = 10;
 
     // Protected variable accessible within its own package and by subclasses
@@ -33,22 +53,5 @@ public class Example {
     // Private method accessible only within its own class
     private void privateMethod() {
         System.out.println("Private method");
-    }
-
-    // Main method to demonstrate access levels
-    public static void main(String[] args) {
-        Example obj = new Example();
-
-        // Accessing variables
-        System.out.println(obj.publicVar);     // OK
-        System.out.println(obj.protectedVar);  // OK
-        System.out.println(obj.defaultVar);    // OK
-        System.out.println(obj.privateVar);    // Compilation error (privateVar has private access in Example)
-
-        // Accessing methods
-        obj.publicMethod();     // OK
-        obj.protectedMethod();  // OK
-        obj.defaultMethod();    // OK
-        obj.privateMethod();    // Compilation error (privateMethod() has private access in Example)
     }
 }

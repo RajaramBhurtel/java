@@ -1,6 +1,6 @@
 public class AbsExe {
     public static void main(String[] args) {
-        Vehicle myCar = new Car();
+        Car myCar = new Car();
         myCar.start();  // Abstraction: we don't need to know how it starts internally
         myCar.stop();
     }
