@@ -23,7 +23,7 @@ public class DictionaryDemo {
 
         // 5. Iterate using Enumeration
         System.out.println("\nKeys:");
-        Enumeration<String> keys = dict.keys();
+        Enumeration<String> keys = dict.elements();
         while (keys.hasMoreElements()) {
             System.out.println(keys.nextElement());
         }

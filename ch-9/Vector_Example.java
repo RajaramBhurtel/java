@@ -7,10 +7,11 @@ public class Vector_Example {
         
         // 1. add(element) - Add elements to vector
         System.out.println("--- Adding elements ---");
-        for(int i = 1; i <= 10; i++) {
+        for(int i = 101; i <= 110; i++) {
             vec.add(i);  // Adds elements 1 through 10
         }
-        vec.add(5);     // Add duplicate value for demonstration
+        
+        vec.add(105);     // Add duplicate value for demonstration
         System.out.println("Vector contents: " + vec);
         
         // 2. get(index) - Retrieve element by index
@@ -30,12 +31,12 @@ public class Vector_Example {
         
         // 6. indexOf(element) - Find first occurrence
         System.out.println("\n--- Searching elements ---");
-        System.out.println("First index of 5: " + vec.indexOf(5));
+        System.out.println("First index of 5: " + vec.indexOf(105));
         System.out.println("First index of 99: " + vec.indexOf(99)); // Not found
         
         // 7. lastIndexOf(element) - Find last occurrence
         vec.add(5); // Add another 5 for demonstration
-        System.out.println("Last index of 5: " + vec.lastIndexOf(5));
+        System.out.println("Last index of 5: " + vec.lastIndexOf(105));
         
         // 8. clear() - Clear all elements (same as removeAllElements())
         System.out.println("\n--- Clearing vector ---");

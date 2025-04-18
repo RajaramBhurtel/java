@@ -25,7 +25,7 @@ public class Stack_Example {
         
         // 4. search(element) - Find element position (1-based from top)
         System.out.println("\n--- Searching stack ---");
-        System.out.println("Position of 5 (from top): " + st.search(5));
+        System.out.println("Position of 5 (from top): " + st.search(1));
         System.out.println("Position of 99 (not in stack): " + st.search(99));
         
         // 5. empty() - Check if stack is empty
