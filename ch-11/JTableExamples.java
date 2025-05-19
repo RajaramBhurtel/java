@@ -5,15 +5,21 @@ import javax.swing.JTable;
 
 public class JTableExamples {
 	// frame
-	JFrame f;
-	// Table
-	JTable j;
+	// JFrame f;
+	// // Table
+	// JTable j;
 
 	// Constructor
 	JTableExamples()
 	{
-		// Frame initialization
-		f = new JFrame();
+	
+	}
+
+	// Driver method
+	public static void main(String[] args)
+	{
+			// Frame initialization
+		JFrame f = new JFrame();
 
 		// Frame Title
 		f.setTitle("JTable Example");
@@ -28,7 +34,7 @@ public class JTableExamples {
 		String[] columnNames = { "Name", "Roll Number", "Department" };
 
 		// Initializing the JTable
-		j = new JTable(data, columnNames);
+		JTable j = new JTable(data, columnNames);
 		j.setBounds(30, 40, 200, 300);
 
 		// adding it to JScrollPane
@@ -38,11 +44,5 @@ public class JTableExamples {
 		f.setSize(500, 200);
 		// Frame Visible = true
 		f.setVisible(true);
-	}
-
-	// Driver method
-	public static void main(String[] args)
-	{
-		new JTableExamples();
 	}
 }
